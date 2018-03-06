@@ -90,7 +90,7 @@
 
 
 
-  <meta name="keywords" content="HTML、CSS," />
+  <meta name="keywords" content="webpack," />
 
 
 
@@ -101,18 +101,18 @@
 
 
 
-<meta name="description" content="HTML、CSS中的易忘知识点HTML部分 a标签的target属性：用于指定链接打开的方式。_self为默认值，_blank为在新窗口中打开方式。  锚点定位：①. 同页面定位 12&amp;lt;a href=&amp;quot;#life&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;h3 id=&amp;quot;life&amp;quot;&amp;gt;&amp;lt;/h3&amp;gt; ​          ②. 不同页面定位(前面加">
-<meta name="keywords" content="HTML、CSS">
+<meta name="description" content="webpack 的使用一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)​    导出一个模块 module.exports = 需要导出的对象 导入一个模块 `var 模块名 = require(文件路径)` ​        webpack 打包命令     webpack 需要打包的文件名 输出的文件名     ​    例如:    webpack main.js">
+<meta name="keywords" content="webpack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML、CSS易忘的知识点">
-<meta property="og:url" content="http://yoursite.com/2018/03/05/易忘的知识点/index.html">
+<meta property="og:title" content="webpack配置">
+<meta property="og:url" content="http://yoursite.com/2018/03/06/webpack配置/index.html">
 <meta property="og:site_name" content="无痕">
-<meta property="og:description" content="HTML、CSS中的易忘知识点HTML部分 a标签的target属性：用于指定链接打开的方式。_self为默认值，_blank为在新窗口中打开方式。  锚点定位：①. 同页面定位 12&amp;lt;a href=&amp;quot;#life&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;h3 id=&amp;quot;life&amp;quot;&amp;gt;&amp;lt;/h3&amp;gt; ​          ②. 不同页面定位(前面加">
+<meta property="og:description" content="webpack 的使用一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)​    导出一个模块 module.exports = 需要导出的对象 导入一个模块 `var 模块名 = require(文件路径)` ​        webpack 打包命令     webpack 需要打包的文件名 输出的文件名     ​    例如:    webpack main.js">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T03:45:19.864Z">
+<meta property="og:updated_time" content="2018-03-06T04:10:06.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML、CSS易忘的知识点">
-<meta name="twitter:description" content="HTML、CSS中的易忘知识点HTML部分 a标签的target属性：用于指定链接打开的方式。_self为默认值，_blank为在新窗口中打开方式。  锚点定位：①. 同页面定位 12&amp;lt;a href=&amp;quot;#life&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;h3 id=&amp;quot;life&amp;quot;&amp;gt;&amp;lt;/h3&amp;gt; ​          ②. 不同页面定位(前面加">
+<meta name="twitter:title" content="webpack配置">
+<meta name="twitter:description" content="webpack 的使用一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)​    导出一个模块 module.exports = 需要导出的对象 导入一个模块 `var 模块名 = require(文件路径)` ​        webpack 打包命令     webpack 需要打包的文件名 输出的文件名     ​    例如:    webpack main.js">
 
 
 
@@ -142,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/05/易忘的知识点/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/06/webpack配置/"/>
 
 
 
 
 
-  <title>HTML、CSS易忘的知识点 | 无痕</title>
+  <title>webpack配置 | 无痕</title>
   
 
 
@@ -286,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/易忘的知识点/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/webpack配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chent">
@@ -303,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">HTML、CSS易忘的知识点</h1>
+          <h1 class="post-title" itemprop="name headline">webpack配置</h1>
         
 
         <div class="post-meta">
@@ -315,8 +315,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T15:10:40+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T11:53:33+08:00">
+                2018-03-06
               </time>
             
 
@@ -353,69 +353,83 @@
       
 
       
-        <h2 id="HTML、CSS中的易忘知识点"><a href="#HTML、CSS中的易忘知识点" class="headerlink" title="HTML、CSS中的易忘知识点"></a>HTML、CSS中的易忘知识点</h2><h3 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h3><ol>
-<li><p>a标签的target属性：用于指定链接打开的方式。_self为默认值，_blank为在新窗口中打开方式。</p>
-</li>
-<li><p>锚点定位：①. 同页面定位</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#life&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;h3 id=&quot;life&quot;&gt;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
-<p>​          ②. 不同页面定位(前面加上路径即可)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;index.html#life&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;h3 id=&quot;life&quot;&gt;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>base 可以设置整体链接的打开状态 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;base target=&quot;_blank&quot;&gt;</span><br></pre></td></tr></table></figure>
-<p>nofollow设置不抓取链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a rel=&quot;nofollow&quot; href=&quot;www.baidu.com&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表格属性table</p>
-<p>​    cellspacing：设置单元格与单元格的边框之间的空白间距</p>
-<p>​    cellpadding：设置单元格内容与单元格边框之间的空白间距</p>
-<p>​    caption：表格标题(标签必须紧随table标签之后)</p>
-<p>​    rowspan：跨行合并</p>
-<p>​    colspan ：跨列合并</p>
+        <h2 id="webpack-的使用"><a href="#webpack-的使用" class="headerlink" title="webpack 的使用"></a>webpack 的使用</h2><h3 id="一：初级使用：webpack-需要打包的文件名-打包后的文件名-js文件"><a href="#一：初级使用：webpack-需要打包的文件名-打包后的文件名-js文件" class="headerlink" title="一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)"></a>一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)</h3><p>​    导出一个模块 <code>module.exports = 需要导出的对象</code></p>
+<pre><code>导入一个模块 `var 模块名 = require(文件路径)`
+</code></pre><p>​        webpack 打包命令     <code>webpack 需要打包的文件名 输出的文件名</code>    </p>
+<p>​    例如:    <code>webpack main.js build.js</code></p>
+<h3 id="二：配置webpack-config-js文件"><a href="#二：配置webpack-config-js文件" class="headerlink" title="二：配置webpack.config.js文件."></a>二：配置webpack.config.js文件.</h3><ol>
+<li><p>默认配置文件名称webpack.config.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line"></span><br><span class="line">			entry:&apos;需要打包的文件&apos;		//路径+文件名</span><br><span class="line"></span><br><span class="line">			output:&#123;</span><br><span class="line"></span><br><span class="line">				path:&quot;输出文件的路径&quot;		//绝对路径  使用__dirname+路径</span><br><span class="line"></span><br><span class="line">				filename:&quot;输出文件的名称&quot;	//一般都为build.js</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>使用webpack打包</li>
+</ol>
+<p>​    –命令行直接输入 “webpack”</p>
+<p>​    –如果是其他改过名字的配置文件 则使用 ‘webpack –config 配置文件名’</p>
 </li>
 </ol>
-<h3 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h3><ol>
-<li><p>background：color url(不推荐加引号) repeat position attachment(scroll | fixed)</p>
-</li>
-<li><p>清除浮动方法：</p>
-<p>①额外标签法：在浮动元素末尾加一个空的标签</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;，或则其他标签br等亦可</span><br></pre></td></tr></table></figure>
-<p>②给父级添加overflow属性方法：通过触发BFC，实现清除浮动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以给父级添加： overflow为 hidden|auto|scroll 都可以实现。</span><br></pre></td></tr></table></figure>
-<p>③使用after伪元素清除浮动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after &#123;  content: &quot;.&quot;; display: block; height: 0; clear: both; visibility: hidden;  &#125;   </span><br><span class="line">.clearfix &#123;*zoom: 1;&#125;   ie6、7 专有</span><br></pre></td></tr></table></figure>
-<p>④after伪元素空余字符法：content:”\200B”;这个参数，Unicode字符里有一个“零宽度空格”，即 U+200B，代替原来的“.”，可以缩减代码量。而且不再使用visibility:hidden。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after &#123;content:&quot;\200B&quot;; display:block; height:0; clear:both; &#125;</span><br><span class="line">.clearfix &#123; *zoom:1; &#125;</span><br></pre></td></tr></table></figure>
-<p>⑤使用before和after双伪元素清除</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before,.clearfix:after&#123; </span><br><span class="line">           content:&quot;.&quot;;</span><br><span class="line">           display:table;</span><br><span class="line">   &#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line"> clear:both;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;*zoom:1;&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>元素的显示与隐藏</p>
-<p>​    ①display：none | block</p>
-<p>​    特点：隐藏之后，不在保留位置</p>
-<p>​    ②visibility：visible | hidden</p>
-<p>​    特点：隐藏之后继续保留位置</p>
-<p>​    ③overflow：    visible : 　不剪切内容也不添加滚动条。</p>
-<p>​                auto : 　 超出自动显示滚动条，不超出不显示滚动条</p>
-<p>​                hidden : 　不显示超过对象尺寸的内容，超出的部分隐藏掉</p>
-<p>​                scroll : 　不管超出内容否，总是显示滚动条</p>
-</li>
-<li><p>防止拖拽文本域resize</p>
-<p>resize：none</p>
-</li>
-<li><p>vertical-align垂直对齐</p>
-<p>​    vertical-align : baseline |top |middle |bottom</p>
-<p>​    vertical-align 不影响块级元素中的内容对齐，它只针对于 行内元素或者行内块元素，特别是行内块元素， 通常用来控制图片和表单等。</p>
-</li>
-<li><p>CSS文本属性</p>
-<p>​     字间距：letter-spacing</p>
-<p>​    单词间距（英文单词）：word-spacing</p>
-<p>​    自动换行：word-break：normal | break-all（允许在单词内换行）| keep-all（只能在半角空格或连字符处换行）</p>
-<p>​    空白符处理：white-space：normal | pre(预格式化) | nowrap(空格空行无效，强制文本不能换行，除非遇到换行标记 <br>。内容超出元素的边界也不换行，若超出浏览器页面则会自动增加滚动条)</p>
-</li>
-<li><p>文字溢出：text-overflow ： clip(不显示省略的标记，裁切) | ellipsis(显示省略的标记…)</p>
-</li>
-<li><p>兼容IE</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 兼容ie --&gt;</span><br><span class="line">    &lt;!--[if lte IE 8]&gt;      小于等于ie8</span><br><span class="line">         &lt;script src=&quot;html5shiv.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;![endif]--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- lte：&amp;lt;less than --&gt;</span><br><span class="line">         &lt;!-- e:equal --&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="三：各种loader的配置"><a href="#三：各种loader的配置" class="headerlink" title="三：各种loader的配置"></a>三：各种loader的配置</h3><ol>
+<li><p>初始化package.json</p>
+<p>​    npm init</p>
+<ol>
+<li>css-loader 是进行css解析，能够使浏览器正常识别js文件中导入的 css 文件</li>
+</ol>
+<p>​    –安装css-loader以及style-loader</p>
+<p>​            npm install style-loader css-loader –save-dev</p>
+<p>​    –在webpack.config.js文件中进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module：&#123;</span><br><span class="line">			rules:[</span><br><span class="line">					&#123;</span><br><span class="line">						test:&apos;/.css$/&apos;，</span><br><span class="line">						loader：&apos;style-loader!css-loader&apos;</span><br><span class="line">					&#125;</span><br><span class="line">				]</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+<p>​    –在main.js中导入css文件</p>
+<p>​            require(‘文件路径’)</p>
+<ol>
+<li>sass-loader是进行scss文件的解析</li>
+</ol>
+<p>​        –安装sass-loader</p>
+<p>​            npm install node-sass sass-loader style-loader css-loader –save-dev</p>
+<p>​        –在webpack.config.js文件中进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rules:[</span><br><span class="line">			&#123;</span><br><span class="line">				test:&apos;/.scss$/&apos;，</span><br><span class="line">				loader：&apos;style-loader!css-loader!sass-loader&apos;</span><br><span class="line">			&#125;</span><br><span class="line">		]</span><br></pre></td></tr></table></figure>
+<p>​        –在main.js中导入sass文件</p>
+<p>​            require(‘文件路径’)</p>
+<ol>
+<li>less-loader是进行less文件的解析</li>
+</ol>
+<p>​        –安装less-loader</p>
+<p>​            npm install less less-loader style-loader css-loader –save-dev</p>
+<p>​        –在webpack.config.js文件中进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rules:[</span><br><span class="line">			&#123;</span><br><span class="line">				test:&apos;/.less$/&apos;，</span><br><span class="line">				loader：&apos;style-loader!css-loader!less-loader&apos;</span><br><span class="line">			&#125;</span><br><span class="line">		]</span><br></pre></td></tr></table></figure>
+<p>​        –在main.js中导入less文件</p>
+<p>​            require(‘文件路径’)</p>
+<ol>
+<li>url-loader是进行url资源的解析</li>
+</ol>
+<p>​        –安装url-loader</p>
+<p>​            npm install url-loader file-loader –save-dev</p>
+<p>​        –在webpack.config.js文件中进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">rules:[</span><br><span class="line">		&#123;</span><br><span class="line">			test:&apos;/.(png|jpg|gif|ttf)$/&apos;，</span><br><span class="line">			loader：&apos;url-loader!limit=20000&amp;name=images/[hash:8].[name].[ext]&apos;						// limit单位是字节 1kb = 1024b(字节)  </span><br><span class="line">                         	// 对于比较小的图片资源可以使用limit进行限制                   			// 小于limit值转换成base64字符串内嵌到js代码中                   			// 大于limit值的图片才转成URL进行网络请求</span><br><span class="line">			&#125;</span><br><span class="line">		]</span><br></pre></td></tr></table></figure>
+<p>​        –在main.js中导入less文件</p>
+<p>​            require(‘文件路径’)</p>
+<ol>
+<li>webpack-dev-server的使用</li>
+</ol>
+<p>​        –安装webpack-dev-server</p>
+<p>​            npm install webpack webpack-dev-server  –save-dev(不接版本号，默认安装最新版本)</p>
+<p>​        –安装自动生成HTML文件的插件</p>
+<p>​            npm install html-webpack-plugin  –save-dev</p>
+<p>​        –修改package.json文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;：&#123;</span><br><span class="line">			&quot;dev&quot;：&quot;webpack-dev-server --inline --open --port 5008&quot;	</span><br><span class="line">							//最新版本不支持--hot</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+<p>​        –在webpack.config.js文件中进行配置</p>
+<p>​            1. 引入html-webpack-plugin</p>
+<p>​                        var htmlWP = require(‘html-webpack-plugin’)；</p>
+<p>​            2. 在modul.exports 中加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">plugins:[</span><br><span class="line">			new htmlWP(&#123;	</span><br><span class="line">			title：&quot;首页&quot;，			//生成页面的标题,</span><br><span class="line">			filename：&quot;index.html&quot;，	//生成的文件名,</span><br><span class="line">			template：&quot;index1.html&quot;，//根据template.html这个模板来生成文件</span><br><span class="line">				&#125;)</span><br><span class="line">			]</span><br></pre></td></tr></table></figure>
+<p>​            3.在模板HTML文件中删除引入build.js的script脚本。</p>
+<p>​            4.运行 npm run dev</p>
+<ol>
+<li>babel-loader的使用</li>
+</ol>
+<p>​        babel-loader 是用来将es6语法转换成es5语法</p>
+<p>​        –安装babel-loader </p>
+<p>​            npm install babel-core babel-loader babel-preset-es2015 babel-plugin-transform-runtime –save-dev</p>
+<p>​        –在webpack.config.js文件中进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">rules:[</span><br><span class="line">		&#123;</span><br><span class="line">			test:&apos;/.js$/&apos;，</span><br><span class="line">			use: [</span><br><span class="line">                    &#123;</span><br><span class="line">                       	loader: &apos;babel-loader&apos;,</span><br><span class="line">                        options: &#123;</span><br><span class="line">                            		presets: [&apos;es2015&apos;]，</span><br><span class="line">                        			&#125;</span><br><span class="line">                   		&#125;</span><br><span class="line">                	]</span><br><span class="line">			&#125;</span><br><span class="line">		]</span><br></pre></td></tr></table></figure>
 <p>​</p>
 </li>
 </ol>
@@ -446,7 +460,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HTML、CSS/" rel="tag"># HTML、CSS</a>
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
           
         </div>
       
@@ -459,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/02/红尘三千丈，念在山水间/" rel="next" title="红尘三千丈，念在山水间">
-                <i class="fa fa-chevron-left"></i> 红尘三千丈，念在山水间
+              <a href="/2018/03/05/易忘的知识点/" rel="next" title="HTML、CSS易忘的知识点">
+                <i class="fa fa-chevron-left"></i> HTML、CSS易忘的知识点
               </a>
             
           </div>
@@ -468,10 +482,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/06/webpack配置/" rel="prev" title="webpack配置">
-                webpack配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -614,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML、CSS中的易忘知识点"><span class="nav-number">1.</span> <span class="nav-text">HTML、CSS中的易忘知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML部分"><span class="nav-number">1.1.</span> <span class="nav-text">HTML部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS部分"><span class="nav-number">1.2.</span> <span class="nav-text">CSS部分</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#webpack-的使用"><span class="nav-number">1.</span> <span class="nav-text">webpack 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一：初级使用：webpack-需要打包的文件名-打包后的文件名-js文件"><span class="nav-number">1.1.</span> <span class="nav-text">一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二：配置webpack-config-js文件"><span class="nav-number">1.2.</span> <span class="nav-text">二：配置webpack.config.js文件.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三：各种loader的配置"><span class="nav-number">1.3.</span> <span class="nav-text">三：各种loader的配置</span></a></li></ol></li></ol></div>
             
 
           </div>
