@@ -109,7 +109,7 @@
 <meta property="og:site_name" content="无痕">
 <meta property="og:description" content="webpack 的使用一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)​    导出一个模块 module.exports = 需要导出的对象 导入一个模块 `var 模块名 = require(文件路径)` ​        webpack 打包命令     webpack 需要打包的文件名 输出的文件名     ​    例如:    webpack main.js">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-07T07:27:52.716Z">
+<meta property="og:updated_time" content="2018-03-26T11:39:15.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack配置">
 <meta name="twitter:description" content="webpack 的使用一：初级使用：webpack 需要打包的文件名  打包后的文件名(js文件)​    导出一个模块 module.exports = 需要导出的对象 导入一个模块 `var 模块名 = require(文件路径)` ​        webpack 打包命令     webpack 需要打包的文件名 输出的文件名     ​    例如:    webpack main.js">
@@ -364,11 +364,11 @@
 </ul>
 <h3 id="三：各种loader的配置"><a href="#三：各种loader的配置" class="headerlink" title="三：各种loader的配置"></a>三：各种loader的配置</h3><h4 id="1-初始化package-json"><a href="#1-初始化package-json" class="headerlink" title="1.初始化package.json"></a>1.初始化package.json</h4><p>​    npm init</p>
 <h4 id="2-css-loader-是进行css解析，能够使浏览器正常识别js文件中导入的-css-文件"><a href="#2-css-loader-是进行css解析，能够使浏览器正常识别js文件中导入的-css-文件" class="headerlink" title="2.css-loader 是进行css解析，能够使浏览器正常识别js文件中导入的 css 文件"></a>2.css-loader 是进行css解析，能够使浏览器正常识别js文件中导入的 css 文件</h4><ul>
-<li>安装css-loader以及style-loader</li>
-</ul>
-<p>​    npm install style-loader css-loader –save-dev</p>
-<ul>
-<li>在webpack.config.js文件中进行配置</li>
+<li><p>安装css-loader以及style-loader</p>
+<pre><code>npm install style-loader css-loader --save-dev
+</code></pre></li>
+<li><p>在webpack.config.js文件中进行配置</p>
+</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">module：&#123;</span><br><span class="line">rules:[&#123;</span><br><span class="line">test:&apos;/.css$/&apos;，</span><br><span class="line">loader：&apos;style-loader!css-loader&apos;</span><br><span class="line">]&#125;</span><br></pre></td></tr></table></figure>
 <ul>
@@ -497,6 +497,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/03/07/gulp的简单使用/" rel="prev" title="gulp的简单使用">
+                gulp的简单使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -576,7 +580,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
